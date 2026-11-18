@@ -1,0 +1,41 @@
+name: contacts_app
+description: "A new Flutter project."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  lottie: ^3.1.2
+  image_picker: ^1.0.7
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.2
+  flutter_native_splash: ^2.4.1
+
+flutter:
+  uses-material-design: true
+
+  # تم ضبط المسافات هنا بدقة
+  assets:
+    - assets/images/
+    - assets/animations/
+
+flutter_launcher_icons:
+  image_path: "assets/images/route_logo.png"
+  android: true
+  ios: true
+
+flutter_native_splash:
+  color: "#29384D"
+  image: "assets/images/route_logo.png"
+  android: true
+  ios: true
+  fullscreen: true
